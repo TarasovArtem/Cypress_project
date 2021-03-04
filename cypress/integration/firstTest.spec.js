@@ -1,8 +1,7 @@
 /// <reference types="Cypress"/>
-describe("", ()=>{
-    cy.visit("/");
+describe("Banking test", ()=>{
 
-    it("", ()=>{
-         
+    it("New Test", ()=>{
+        cy.visit("/");
     })
 })
