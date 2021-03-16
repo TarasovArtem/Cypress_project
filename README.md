@@ -2,7 +2,7 @@
 
 #### Installation
  
-    git clone https://github.com/TarasovArtem/QA_Challenge.git
+    git clone https://github.com/TarasovArtem/Cypress_project.git
 
     cd  
 
