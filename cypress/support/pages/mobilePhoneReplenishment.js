@@ -17,7 +17,7 @@ export class MobilePhoneReplenishment {
     }
 
     submitPayment() {
-        cy.get('[data-qa-node="submit"]', {timeout: 2000}   ).click();
+        cy.get('[data-qa-node="submit"]', {timeout: 3000}   ).click();
     }
 
     checkDebitCard(debitCard) {

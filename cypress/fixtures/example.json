@@ -1,5 +1,18 @@
 {
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+  "AmericanExpress":	{
+    "Card Type": "visa",
+    "Card Number": "4552331448138217",
+    "CVV":"929",
+    "Expires": "05/2024"
+  },
+
+  "AmericanExpressCorporate":	{
+    "type": "American Express Corporate",
+    "number": "378734493671000"
+  },
+
+  "AustralianBankCard":	{
+    "type": "Australian Bank Card",
+    "number": "5610591081018250"
+  }
 }
