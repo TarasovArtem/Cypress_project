@@ -4,7 +4,7 @@
  
     git clone https://github.com/TarasovArtem/Cypress_project.git
 
-    cd  
+    cd Cypress_project
 
     npm install
 
