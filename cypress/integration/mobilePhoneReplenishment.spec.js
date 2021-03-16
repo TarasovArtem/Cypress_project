@@ -3,7 +3,7 @@
 import { mobilePhoneReplenishment } from "../support/pages/mobilePhoneReplenishment";
 import { navigation } from "../support/pages/navigation";
 
-describe("Techniques for using page objects patterns", ()=>{
+describe("Mobile phone replenishment with card", ()=>{
     beforeEach(()=> {
         navigation.mobile(); 
     })

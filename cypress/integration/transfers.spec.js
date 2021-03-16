@@ -1,7 +1,7 @@
 import { transfers } from "../support/pages/transfers";
 import { navigation } from "../support/pages/navigation";
 
-describe("Techniques for using page objects patterns", ()=>{
+describe("Transfer between cards", ()=>{
     beforeEach(()=> {
         navigation.moneyTransferCard(); 
     })
