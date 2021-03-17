@@ -1,23 +1,7 @@
 export class MobilePhoneReplenishment {
+    
     typePhoneNumber(phoneNumber) {
         cy.get('[data-qa-node="phone-number"]').type(phoneNumber);
-    }
-
-    typeAmount(amount) {
-        cy.get('[data-qa-node="amount"]').type(amount);
-    }
-
-    typeDebitCardData(cardNumber, expData, cvvData) {
-        cy.get('[data-qa-node="numberdebitSource"]')
-        .type(cardNumber)
-        .get('[data-qa-node="expiredebitSource"]')
-        .type(expData)
-        .get('[data-qa-node="cvvdebitSource"]')
-        .type(cvvData);
-    }
-
-    submitPayment() {
-        cy.get('[data-qa-node="submit"]', {timeout: 3000}   ).click();
     }
 
     checkDebitCard(debitCard) {

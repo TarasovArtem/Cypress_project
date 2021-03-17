@@ -1,0 +1,16 @@
+{
+    "requestBody": {
+        "action":"info",
+        "phone":"+380686979712",
+        "amount":50,
+        "currency":"UAH",
+        "cardCvv":"345",
+        "card":"4552331448138217",
+        "cardExp":"0524",
+        "operator":
+        "Kyivstar Ukraine",
+        "operatorId":"602",
+        "xref":"5119e1a5f442dd68f6d94a95e4a6a62a",
+        "_":1615975855433
+    }
+}

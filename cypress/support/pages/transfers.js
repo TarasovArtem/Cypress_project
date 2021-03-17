@@ -1,14 +1,6 @@
 export class Transfers {
-    payerDebitCardData(cardNumber, expData, cvvData) {
-        cy.get('[data-qa-node="numberdebitSource"]')
-        .type(cardNumber)
-        .get('[data-qa-node="expiredebitSource"]')
-        .type(expData)
-        .get('[data-qa-node="cvvdebitSource"]')
-        .type(cvvData);
-    }
 
-    payerFirstName(name, lastName) {
+    payerName(name, lastName) {
         cy.get('[data-qa-node="firstNamedebitSource"]')
         .type(name)
         .get('[data-qa-node="lastNamedebitSource"]')
@@ -26,19 +18,11 @@ export class Transfers {
         .type(lastNamereceiver);
     }
 
-    transferAmount(transferAmount) {
-        cy.get('[data-qa-node="amount"]').type(transferAmount);
-    }
-
     transferComment(transferComm) {
         cy.get('[data-qa-node="toggle-comment"]')
         .click()
         .get('[data-qa-node="comment"]')
         .type(transferComm);
-    }
-
-    transferSubmit() {
-        cy.get('button[type="submit"]', {timeout: 3000} ).click();
     }
 
     checkPayerCard(payerCard) {
@@ -49,11 +33,11 @@ export class Transfers {
         cy.get('[data-qa-node="receiver-card"]').should('have.text', receiverCard);
     }
 
-    payerAmount(payerAmount) {
+    checkPayerAmount(payerAmount) {
         cy.get('[data-qa-node="payer-amount"]').should('have.text', payerAmount);
     }
 
-    payerCurrency(payerCurrency) {
+    checkPayerCurrency(payerCurrency) {
         cy.get('[data-qa-node="payer-currency"]').should('have.text', payerCurrency);
     }
     
@@ -69,11 +53,6 @@ export class Transfers {
     checkComment(checkComment) {
         cy.get('[data-qa-node="comment"]').should('have.text',checkComment);
     }
-
-
-
-
-
 
 
 }
