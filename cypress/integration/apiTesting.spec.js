@@ -1,10 +1,6 @@
 /// <reference types="Cypress"/>
 
-
-
 describe("API testing", ()=>{
-    
-    
     it("GET request", ()=>{
       cy.request('/')
         .then((response) => {

@@ -22,7 +22,7 @@ export class Transfers {
         cy.get('[data-qa-node="toggle-comment"]')
         .click()
         .get('[data-qa-node="comment"]')
-        .type(transferComm);
+        .type(transferComm).toMatchImageSnapshot();
     }
 
     checkPayerCard(payerCard) {

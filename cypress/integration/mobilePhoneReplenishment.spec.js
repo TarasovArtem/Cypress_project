@@ -5,6 +5,11 @@ import { navigation } from "../support/pages/navigation";
 import { basePage } from "../support/pages/basePage";
 
 describe("Mobile phone replenishment with card", ()=>{
+    
+    beforeEach('setup success response with stub', () => {
+        basePage.setupSuccessResponse();
+    })
+    
     beforeEach(()=> {
         navigation.mobile(); 
     })
@@ -17,6 +22,6 @@ describe("Mobile phone replenishment with card", ()=>{
         mobilePhoneReplenishment.checkDebitAmount('1');
         mobilePhoneReplenishment.checkPaymentCurrency('UAH')
         mobilePhoneReplenishment.checkDebitCommission('2');
-        
+        basePage.buttonConfirm();
     })
 })
