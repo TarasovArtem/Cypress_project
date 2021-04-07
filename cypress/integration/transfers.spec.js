@@ -14,14 +14,14 @@ describe("Transfer between cards", ()=>{
         transfers.receiverCardNumber('5309233034765085');
         transfers.receiverName('Juliana', 'Janssen');
         basePage.typeAmount('300');
-        transfers.transferComment('Cypress test');
+        transfers.transferComment('Cypress Test');
         basePage.submitPayment();
         transfers.checkPayerCard('* 8217');
         transfers.checkReceiverCard('* 5085');
         transfers.checkPayerAmount('300 UAH');
-        transfers.checkPayerCurrency('88.17 UAH');
-        transfers.checkTotalAmount('388.17', 'UAH');
-        transfers.checkComment('Cypress test');
+        transfers.checkPayerCurrency('88.40 UAH');
+        transfers.checkTotalAmount('388.40', 'UAH');
+        transfers.checkComment('Cypress Test');
 
     })
 })
